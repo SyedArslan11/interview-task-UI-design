@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>realFunnel</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="logic.js" defer></script>
+    <!-- Bootstrap LINKS Start -->
+    <script
+      src="https://kit.fontawesome.com/f8d3016ed9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap LINKS End -->
+
+    <!-- Font Awesome Icons Start -->
+    <script
+      src="https://kit.fontawesome.com/332de23543.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Font Awesome Icons End -->
+  </head>
+
+  <body>
+    <div class="main">
+      <nav class="navSec">
+        <div class="left">
+          <span
+            ><img class="logo" src="./assets/main-logo.jpg" alt="realFunnel"
+          /></span>
+          <div class="nav-left"><input placeholder="Search" type="text" /></div>
+        </div>
+        <div class="right">
+          <!-- start -->
+          <div class="dropdown">
+            <span
+              class="dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+
+          <!-- end -->
+        </div>
+      </nav>
+      <aside>
+        <div class="main-container d-flex">
+          <div class="sidebar" id="side_nav">
+            <div class="px-2 pt-3 pb-4"></div>
+            <ul class="list-unstyled px-2">
+              <li>
+                <a href="#" class="text-decoration-none d-block"
+                  ><i style="margin-right: 10px" class="fal fa-home-lg-alt"></i
+                  >OVERVIEW</a
+                >
+              </li>
+              <li class="active">
+                <a href="#" class="text-decoration-none d-block"
+                  ><i
+                    style="color: #ff6031; margin-right: 10px"
+                    class="fa-sharp fa-solid fa-wifi"
+                  ></i
+                  >FUNNELS</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none d-block"
+                  ><i style="margin-right: 10px" class="fal fa-wallet"></i
+                  >MERCHANTS</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none d-block"
+                  ><i style="margin-right: 10px" class="far fa-chart-bar"></i
+                  >REPORTS</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none d-block"
+                  ><i
+                    style="margin-right: 10px"
+                    class="fal fa-chart-pie-alt"
+                  ></i
+                  >CAMPAIGN</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none d-block"
+                  ><i style="margin-right: 10px" class="fal fa-calculator"></i
+                  >CALCULATOR</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="dashboard-content px-5 py-5">
+              <!-- dropdowns sec -->
+              <div class="dropdown-section">
+                <!-- DropDown 1 Start-->
+                <div class="dropdown drp-down">
+                  <span
+                    class="dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="width: 800px;"
+                  >
+                    [DropDown Menu 1]
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Random Data 1</a></li>
+                    <li><a class="dropdown-item" href="#">Random Data 2</a></li>
+                  </ul>
+                </div>
+                <!-- DropDown 1 End -->
+
+                <!-- DropDown 2 Start -->
+                <div class="dropdown drp-down">
+                  <span
+                    class="dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    [DropDown Menu 2]
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Random Data 1</a></li>
+                    <li><a class="dropdown-item" href="#">Random Data 2</a></li>
+                  </ul>
+                </div>
+                <!-- DropDown 2 End -->
+                <button onclick="countUp()" class="btn-size norm-btn">(Button)</button>
+              </div>
+              <!-- responsive values sec -->
+              <div class="responsive-section">
+                <div style="display: flex;">
+                  <span class="data-section">
+                    <div class="sub-data" data-target="04">0</div>
+                    <div>Visitor</div>
+                  </span>
+                </div>
+                <div style="display: flex; justify-content: flex-start">
+                  <span class="data-section">
+                    <div class="sub-data" data-target="525">0</div>
+                    <div>Conversion</div>
+                  </span>
+                </div>
+                <div style="display: flex; justify-content: flex-start">
+                  <span
+                    style="
+                      margin-right: -18px;
+                      font-weight: bold;
+                      font-size: large;
+                    "
+                    >$</span
+                  ><span class="data-section">
+                    <div class="sub-data" data-target="25.6">0</div>
+                    <div>Amount</div>
+                  </span>
+                </div>
+                <div style="display: flex; justify-content: flex-start">
+                  <span
+                    style="
+                      margin-right: -2px;
+                      font-weight: bold;
+                      font-size: large;
+                    "
+                    >$</span
+                  ><span class="data-section">
+                    <div class="sub-data" data-target="54">0</div>
+                    <div>Sell</div>
+                  </span>
+                </div>
+                <div style="display: flex; justify-content: flex-start">
+                  <span
+                    style="
+                      margin-right: -18px;
+                      font-weight: bold;
+                      font-size: large;
+                    "
+                  ></span
+                  ><span class="data-section">
+                    <div class="sub-data" data-target="125">0</div>
+                    <div>AOV</div>
+                  </span>
+                </div>
+              </div>
+
+              <!-- carousel Cards sec start -->
+              <div class="lower-sec">
+                <div class="parent">
+                  <div class="left-sect">
+                    <h3>Funnel Step</h3>
+                    <button  class="btn-size norm-btn">(Button)</button>
+                  </div>
+                  <div class="right-sec">
+                    <span
+                    class="carousel-btn"
+                      type="button"
+                      data-bs-target="#carouselExampleControls"
+                      data-bs-slide="prev"
+                    >
+                      <span><i class="fal fa-arrow-alt-left"></i> Previous</span>
+                  </span>
+                    <span
+                    class="carousel-btn"
+                      type="button"
+                      data-bs-target="#carouselExampleControls"
+                      data-bs-slide="next"
+                    >
+                      
+                      <span>Next <i class="fal fa-arrow-alt-right"></i></span>
+                </span>
+                  </div>
+                </div>
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="heading-parent">
+                        <div class="headings p-3">
+                          <h3>Heading 1</h3>
+                          <div class="visitor-data">
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="headings p-3">
+                          <h3>Heading 2</h3>
+                          <div class="visitor-data">
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="heading-parent">
+                        <div class="headings p-3">
+                          <h3>Heading 3</h3>
+                          <div class="visitor-data">
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="headings p-3">
+                          <h3>Heading 4</h3>
+                          <div class="visitor-data">
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="heading-parent">
+                        <div class="headings p-3">
+                          <h3>Heading 5</h3>
+                          <div class="visitor-data">
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="headings p-3">
+                          <h3>Heading 6</h3>
+                          <div class="visitor-data">
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                            <div>
+                              <div>32564</div>
+                              <div>Visitor</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- carousel Cards sec end -->
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- <script src="https://cdn.jsdeliver.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> -->
+  </body>
+</html>
